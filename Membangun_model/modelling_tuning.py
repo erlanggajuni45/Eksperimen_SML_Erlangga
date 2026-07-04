@@ -16,8 +16,8 @@ def train_and_log():
     train_path = "preprocessing/diabetes_dataset/diabetes_train.csv"
     test_path = "preprocessing/diabetes_dataset/diabetes_test.csv"
     
+    # Fallback jika dijalankan di folder berbeda
     if not os.path.exists(train_path):
-        # Fallback jika dijalankan di folder berbeda
         train_path = "../preprocessing/diabetes_dataset/diabetes_train.csv"
         test_path = "../preprocessing/diabetes_dataset/diabetes_test.csv"
 
